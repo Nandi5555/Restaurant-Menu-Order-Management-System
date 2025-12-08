@@ -1,0 +1,603 @@
+23:16:21.366 Running build in Washington, D.C., USA (East) – iad1
+23:16:21.367 Build machine configuration: 2 cores, 8 GB
+23:16:21.392 Retrieving list of deployment files...
+23:16:21.400 Skipping build cache, deployment was triggered without cache.
+23:16:22.679 Downloading 156 deployment files...
+23:16:30.702 Running "vercel build"
+23:16:31.701 Vercel CLI 49.0.0
+23:16:32.184 Installing dependencies...
+23:16:36.313 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+23:16:36.725 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+23:16:37.846 npm warn deprecated @supabase/auth-helpers-shared@0.6.3: This package is now deprecated - please use the @supabase/ssr package instead.
+23:16:38.082 npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+23:16:38.128 npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+23:16:38.142 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+23:16:38.525 npm warn deprecated @supabase/auth-helpers-nextjs@0.9.0: This package is now deprecated - please use the @supabase/ssr package instead.
+23:16:41.266 npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+23:16:46.128 
+23:16:46.129 added 504 packages in 13s
+23:16:46.129 
+23:16:46.130 153 packages are looking for funding
+23:16:46.130   run `npm fund` for details
+23:16:46.197 Detected Next.js version: 14.1.0
+23:16:46.198 Running "npm run build"
+23:16:46.405 
+23:16:46.406 > restaurant-menu-system@0.1.0 build
+23:16:46.406 > next build
+23:16:46.407 
+23:16:47.236 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+23:16:47.236 This information is used to shape Next.js' roadmap and prioritize features.
+23:16:47.236 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+23:16:47.237 https://nextjs.org/telemetry
+23:16:47.237 
+23:16:47.365    ▲ Next.js 14.1.0
+23:16:47.367    - Environments: .env.local
+23:16:47.367 
+23:16:47.532    Creating an optimized production build ...
+23:17:02.375 <w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (139kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+23:17:02.595  ⚠ Compiled with warnings
+23:17:02.596 
+23:17:02.596 ./node_modules/@supabase/realtime-js/dist/module/lib/websocket-factory.js
+23:17:02.596 A Node.js API is used (process.versions at line: 43) which is not supported in the Edge Runtime.
+23:17:02.596 Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+23:17:02.597 
+23:17:02.597 Import trace for requested module:
+23:17:02.597 ./node_modules/@supabase/realtime-js/dist/module/lib/websocket-factory.js
+23:17:02.597 ./node_modules/@supabase/realtime-js/dist/module/index.js
+23:17:02.597 ./node_modules/@supabase/supabase-js/dist/main/index.js
+23:17:02.598 ./node_modules/@supabase/supabase-js/dist/esm/wrapper.mjs
+23:17:02.598 ./node_modules/@supabase/auth-helpers-shared/dist/index.mjs
+23:17:02.598 ./node_modules/@supabase/auth-helpers-nextjs/dist/index.js
+23:17:02.598 
+23:17:02.598 ./node_modules/@supabase/supabase-js/dist/main/index.js
+23:17:02.598 A Node.js API is used (process.version at line: 103) which is not supported in the Edge Runtime.
+23:17:02.598 Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+23:17:02.599 
+23:17:02.599 Import trace for requested module:
+23:17:02.599 ./node_modules/@supabase/supabase-js/dist/main/index.js
+23:17:02.599 ./node_modules/@supabase/supabase-js/dist/esm/wrapper.mjs
+23:17:02.599 ./node_modules/@supabase/auth-helpers-shared/dist/index.mjs
+23:17:02.599 ./node_modules/@supabase/auth-helpers-nextjs/dist/index.js
+23:17:02.599 
+23:17:05.254 request to https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap failed, reason: 
+23:17:05.254 
+23:17:05.254 Retrying 1/3...
+23:17:11.661  ✓ Compiled successfully
+23:17:11.662    Linting and checking validity of types ...
+23:17:17.831    Collecting page data ...
+23:17:19.470    Generating static pages (0/18) ...
+23:17:19.618 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:19.619     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:19.619     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:19.619     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:19.619     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:19.620     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:19.620     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:19.620     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:19.620     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:19.620     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:19.620     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:19.621   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:19.621   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:19.621 }
+23:17:19.621 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:19.621     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:19.621     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:19.621     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:19.621     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:19.621     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:19.622     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:19.622     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:19.622     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:19.624     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:19.625     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:19.629   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:19.630   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:19.630 }
+23:17:20.063 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.063     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.064     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.064     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.064     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.064     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.064     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.064     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.064     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.064     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.064     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.064   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.064   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.064 }
+23:17:20.064 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.064     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.065     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.065     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.065     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.065     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.065     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.065     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.065     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.065     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.065     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.065   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.065   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.065 }
+23:17:20.071 
+   Generating static pages (4/18) 
+23:17:20.147 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.149     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.150     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.150     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.153     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.153     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.153     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.153     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.154     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.154     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.154     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.154   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.154   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.154 }
+23:17:20.154 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.154     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.154     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.154     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.154     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.154     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.154     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.155     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.155     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.155     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.155     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.155   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.155   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.155 }
+23:17:20.196 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.197     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.197     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.197     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.198     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.198     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.198     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.198     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.198     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.199     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.199     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.199   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.202   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.203 }
+23:17:20.203 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.203     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.203     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.204     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.204     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.204     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.204     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.204     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.204     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.204     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.204     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.204   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.204   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.204 }
+23:17:20.370 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.377     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.377     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.377     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.378     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.378     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.378     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.378     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.378     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.378     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.378     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.378   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.378   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.378 }
+23:17:20.378 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.378     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.378     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.378     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.378     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.378     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.378     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.378     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.378     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.378     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.378     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.385   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.386   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.386 }
+23:17:20.413 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.414     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.414     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.414     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.415     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.415     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.415     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.415     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.415     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.415     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.415     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.415   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.415   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.415 }
+23:17:20.415 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.415     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.415     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.415     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.416     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.416     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.416     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.416     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.416     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.416     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.416     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.416   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.416   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.416 }
+23:17:20.424 
+   Generating static pages (8/18) 
+23:17:20.443 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.443     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.443     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.444     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.444     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.444     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.444     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.444     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.444     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.444     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.444     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.444   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.444   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.444 }
+23:17:20.444 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.444     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.444     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.444     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.444     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.445     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.445     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.445     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.445     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.445     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.445     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.445   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.445   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.445 }
+23:17:20.492 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.492     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.492     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.492     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.492     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.492     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.492     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.492     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.492     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.492     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.492     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.493   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.493   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.493 }
+23:17:20.493 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.493     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.493     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.493     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.493     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.493     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.493     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.493     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.493     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.493     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.493     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.493   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.493   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.494 }
+23:17:20.527 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.527     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.527     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.527     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.527     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.527     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.527     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.527     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.527     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.527     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.527     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.528   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.528   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.528 }
+23:17:20.528 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.528     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.528     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.528     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.528     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.528     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.528     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.528     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.528     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.528     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.528     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.528   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.528   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.528 }
+23:17:20.557 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.558     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.558     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.558     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.559     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.559     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.559     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.559     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.559     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.559     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.559     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.559   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.559   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.559 }
+23:17:20.559 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.559     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.559     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.559     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.559     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.559     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.559     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.559     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.559     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.560     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.560     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.560   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.560   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.560 }
+23:17:20.640 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.640     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.640     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.640     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.640     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.640     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.640     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.640     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.640     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.640     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.640     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.641   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.641   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.641 }
+23:17:20.641 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.641     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.641     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.641     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.641     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.641     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.641     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.641     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.641     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.641     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.642     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.642   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.642   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.642 }
+23:17:20.644 
+   Generating static pages (13/18) 
+23:17:20.694 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.695     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.695     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.696     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.696     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.697     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.697     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.697     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.697     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.697     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.698     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.698   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.698   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.699 }
+23:17:20.699 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.699     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.699     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.700     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.700     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.700     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.700     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.700     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.700     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.701     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.701     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.701   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.702   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.703 }
+23:17:20.703 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.703     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.704     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.704     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.704     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.704     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.704     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.705     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.705     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.705     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.705     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.705   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.706   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.706 }
+23:17:20.706 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.706     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.707     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.707     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.707     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.707     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.707     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.708     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.708     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.708     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.708     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.708   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.709   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.709 }
+23:17:20.722 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.722     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.724     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.724     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.724     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.724     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.724     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.724     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.724     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.724     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.724     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.724   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.724   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.724 }
+23:17:20.725 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.725     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.725     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.725     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.725     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.725     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.726     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.733     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.733     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.733     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.734     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.734   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.734   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.734 }
+23:17:20.775 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.776     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.776     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.777     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.777     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.777     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.777     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.778     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.778     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.778     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.778     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.778   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.778   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.779 }
+23:17:20.779 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.779     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.779     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.779     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.780     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.780     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.780     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.780     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.780     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.780     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.780     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.780   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.780   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.781 }
+23:17:20.781 ReferenceError: window is not defined
+23:17:20.781     at /vercel/path0/.next/server/app/orders/track/page.js:1:5657
+23:17:20.781     at 24673 (/vercel/path0/.next/server/app/orders/track/page.js:1:152114)
+23:17:20.781     at t (/vercel/path0/.next/server/webpack-runtime.js:1:128)
+23:17:20.781     at 77518 (/vercel/path0/.next/server/app/orders/track/page.js:6:877)
+23:17:20.781     at t (/vercel/path0/.next/server/webpack-runtime.js:1:128)
+23:17:20.781     at F (/vercel/path0/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94693)
+23:17:20.781     at /vercel/path0/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:97108
+23:17:20.781     at W._fromJSON (/vercel/path0/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:97546)
+23:17:20.781     at JSON.parse (<anonymous>)
+23:17:20.782     at N (/vercel/path0/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94414)
+23:17:20.782 
+23:17:20.782 Error occurred prerendering page "/orders/track". Read more: https://nextjs.org/docs/messages/prerender-error
+23:17:20.782 
+23:17:20.782 ReferenceError: window is not defined
+23:17:20.782     at /vercel/path0/.next/server/app/orders/track/page.js:1:5657
+23:17:20.782     at 24673 (/vercel/path0/.next/server/app/orders/track/page.js:1:152114)
+23:17:20.782     at t (/vercel/path0/.next/server/webpack-runtime.js:1:128)
+23:17:20.782     at 77518 (/vercel/path0/.next/server/app/orders/track/page.js:6:877)
+23:17:20.782     at t (/vercel/path0/.next/server/webpack-runtime.js:1:128)
+23:17:20.782     at F (/vercel/path0/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94693)
+23:17:20.782     at /vercel/path0/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:97108
+23:17:20.783     at W._fromJSON (/vercel/path0/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:97546)
+23:17:20.783     at JSON.parse (<anonymous>)
+23:17:20.783     at N (/vercel/path0/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94414)
+23:17:20.936 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.946     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.946     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.946     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.947     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.947     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.947     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.947     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.947     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.947     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.947     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.947   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.947   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.947 }
+23:17:20.947 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.947     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.947     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.947     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.947     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.947     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.947     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.947     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.947     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.947     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.947     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.947   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.947   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.947 }
+23:17:20.947 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.947     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.947     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.947     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.947     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.947     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.947     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.947     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.947     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.947     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.948     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.948   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.948   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.948 }
+23:17:20.948 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.948     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.948     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.948     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.948     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.948     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.948     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.948     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.948     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.948     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.948     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.948   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.948   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.948 }
+23:17:20.983 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.984     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.984     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.984     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.984     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.984     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.984     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.984     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.985     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.985     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.985     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.985   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.985   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.985 }
+23:17:20.985 n [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+23:17:20.985     at u (/vercel/path0/.next/server/chunks/513.js:160:103830)
+23:17:20.985     at Object.d [as cookies] (/vercel/path0/.next/server/chunks/513.js:160:90107)
+23:17:20.985     at w.getCookie (/vercel/path0/.next/server/chunks/513.js:88:13489)
+23:17:20.985     at w.getItem (/vercel/path0/.next/server/chunks/513.js:169:4057)
+23:17:20.985     at F (/vercel/path0/.next/server/chunks/513.js:88:85239)
+23:17:20.985     at s._recoverAndRefresh (/vercel/path0/.next/server/chunks/513.js:101:26207)
+23:17:20.986     at s._initialize (/vercel/path0/.next/server/chunks/513.js:88:114429)
+23:17:20.986     at /vercel/path0/.next/server/chunks/513.js:88:113314
+23:17:20.986     at /vercel/path0/.next/server/chunks/513.js:101:12280
+23:17:20.986     at s.eD [as lock] (/vercel/path0/.next/server/chunks/513.js:88:109359) {
+23:17:20.986   description: "Page couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+23:17:20.986   digest: 'DYNAMIC_SERVER_USAGE'
+23:17:20.986 }

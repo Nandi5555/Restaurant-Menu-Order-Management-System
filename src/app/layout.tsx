@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   description: 'Complete restaurant management system with menu browsing, ordering, and admin tools',
 }
 
+export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
+
 export default async function RootLayout({
   children,
 }: {

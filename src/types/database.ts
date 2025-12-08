@@ -12,6 +12,7 @@ export interface Category {
   id: string
   name: string
   description: string | null
+  image_url?: string | null
   created_at: string
 }
 
@@ -27,6 +28,14 @@ export interface MenuItem {
   inventory_count: number | null
   created_at: string
   category?: Category
+  slug?: string
+  is_featured?: boolean
+  original_price?: number
+  is_vegan?: boolean
+  is_gluten_free?: boolean
+  is_spicy?: boolean
+  allergens?: string | null
+  nutritional_info?: string | null
 }
 
 export interface Cart {

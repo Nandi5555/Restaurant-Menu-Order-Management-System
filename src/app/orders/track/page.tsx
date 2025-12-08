@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { MapPin, Bike, Home, Utensils, CheckCircle2 } from "lucide-react"
 import { updateOrderStatus } from "@/app/actions/orders"
-import L from "leaflet"
 import "leaflet/dist/leaflet.css"
 
 export default function TrackOrderPage() {
@@ -25,9 +24,9 @@ export default function TrackOrderPage() {
   ], [])
 
   const mapRef = useRef<HTMLDivElement | null>(null)
-  const mapInstance = useRef<L.Map | null>(null)
-  const markerRef = useRef<L.Marker | null>(null)
-  const route = useRef<L.LatLngExpression[]>([
+  const mapInstance = useRef<any>(null)
+  const markerRef = useRef<any>(null)
+  const route = useRef<any[]>([
     [12.9716, 77.5946],
     [12.9720, 77.5970],
     [12.9730, 77.6000],
@@ -37,15 +36,19 @@ export default function TrackOrderPage() {
   ])
 
   useEffect(() => {
-    if (!mapRef.current || mapInstance.current) return
-    const map = L.map(mapRef.current).setView(route.current[0] as L.LatLngTuple, 14)
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "© OpenStreetMap" }).addTo(map)
-    L.polyline(route.current as L.LatLngTuple[], { color: "#f97316" }).addTo(map)
-    const marker = L.marker(route.current[0] as L.LatLngTuple, {
-      icon: L.divIcon({ className: "", html: '<div style="background:#f97316;border-radius:50%;width:18px;height:18px;box-shadow:0 0 0 2px #fff"></div>' })
-    }).addTo(map)
-    markerRef.current = marker
-    mapInstance.current = map
+    const init = async () => {
+      if (!mapRef.current || mapInstance.current) return
+      const L = await import("leaflet")
+      const map = L.map(mapRef.current).setView(route.current[0] as any, 14)
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "© OpenStreetMap" }).addTo(map)
+      L.polyline(route.current as any[], { color: "#f97316" }).addTo(map)
+      const marker = L.marker(route.current[0] as any, {
+        icon: L.divIcon({ className: "", html: '<div style="background:#f97316;border-radius:50%;width:18px;height:18px;box-shadow:0 0 0 2px #fff"></div>' })
+      }).addTo(map)
+      markerRef.current = marker
+      mapInstance.current = map
+    }
+    init()
   }, [])
 
   useEffect(() => {
@@ -59,7 +62,7 @@ export default function TrackOrderPage() {
     // Move marker along route
     if (!markerRef.current) return
     const idx = Math.min(route.current.length - 1, Math.floor((progress / 100) * (route.current.length - 1)))
-    markerRef.current.setLatLng(route.current[idx] as L.LatLngTuple)
+    markerRef.current.setLatLng(route.current[idx] as any)
     // Persist tracking info for orders list
     try { localStorage.setItem(`order_tracking_${orderId}`, JSON.stringify({ progress, statusIndex: activeIndex })) } catch {}
     if (progress >= 100) {
