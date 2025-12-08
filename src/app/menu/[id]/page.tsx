@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation"
-import { getMenuItemById, getRelatedItems } from "@/app/actions/menu"
+import { getMenuItemById, getRelatedItems, getMenuItemBySlug } from "@/app/actions/menu"
 import MenuItemDetail from "@/components/menu-item-detail"
 import RelatedItems from "@/components/related-items"
 import { Suspense } from "react"
 import { Skeleton } from "@/components/ui/skeleton"
+
+export const dynamic = "force-dynamic"
 
 interface MenuItemPageProps {
   params: { id: string }
@@ -12,7 +14,7 @@ interface MenuItemPageProps {
 export default async function MenuItemPage({ params }: MenuItemPageProps) {
   const { id } = params
 
-  const item = await getMenuItemById(id)
+  const item = (await getMenuItemById(id)) || (await getMenuItemBySlug(id))
   if (!item) {
     notFound()
   }
@@ -83,4 +85,3 @@ function RelatedItemsSkeleton() {
     </div>
   )
 }
-

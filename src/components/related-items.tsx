@@ -62,7 +62,7 @@ export default function RelatedItems({ items }: RelatedItemsProps) {
           whileHover={{ y: -8, transition: { duration: 0.3 } }}
           className="group"
         >
-          <Link href={`/menu/${item.slug}`}>
+          <Link href={`/menu/${item.id}`}>
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-orange-200 dark:hover:border-orange-600">
               {/* Image */}
               <div className="relative h-48 overflow-hidden">

@@ -127,6 +127,46 @@ export async function getMenuItemById(id: string): Promise<MenuItem | null> {
   return data
 }
 
+export async function getMenuItemBySlug(slug: string): Promise<MenuItem | null> {
+  const supabase = createServerClient()
+
+  const { data, error } = await supabase
+    .from("menu_items")
+    .select(`
+      *,
+      category:categories(*)
+    `)
+    .eq("slug", slug)
+    .single()
+
+  if (error) {
+    console.error("Error fetching menu item by slug:", error)
+    return null
+  }
+
+  return data
+}
+
+export async function getMenuItemBySlug(slug: string): Promise<MenuItem | null> {
+  const supabase = createServerClient()
+
+  const { data, error } = await supabase
+    .from("menu_items")
+    .select(`
+      *,
+      category:categories(*)
+    `)
+    .eq("slug", slug)
+    .single()
+
+  if (error) {
+    console.error("Error fetching menu item by slug:", error)
+    return null
+  }
+
+  return data
+}
+
 export async function getRelatedItems(itemId: string, categoryId: string): Promise<MenuItem[]> {
   const supabase = createServerClient()
   
