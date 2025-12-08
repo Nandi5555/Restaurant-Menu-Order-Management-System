@@ -10,7 +10,7 @@ export async function middleware(req: NextRequest) {
   const url = req.nextUrl.clone()
   const path = url.pathname
 
-  const protectedRoutes = ["/menu", "/orders", "/cart", "/checkout", "/profile", "/addresses"]
+  const protectedRoutes = ["/orders", "/cart", "/checkout", "/profile", "/addresses"]
   const isProtected = protectedRoutes.some((p) => path.startsWith(p))
   const isAdmin = path.startsWith("/admin") || path.startsWith("/(admin)")
 
