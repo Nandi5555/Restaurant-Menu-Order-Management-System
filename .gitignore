@@ -2,3 +2,9 @@ node_modules
 /.env*
 *.env
 private/
+.next/
+.vercel/
+out/
+coverage/
+*.log
+.DS_Store
